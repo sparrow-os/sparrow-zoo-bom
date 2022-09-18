@@ -13,7 +13,7 @@
     <packaging>pom</packaging>
     <version>1.0.0-SNAPSHOT</version>
     <properties>
-        <repository>sparrow-os/sparrow-zoo-bom</repository>
+        <repository>bigduu/sparrow-zoo-bom</repository>
         <sparrow_pay_version>1.0.0-SNAPSHOT</sparrow_pay_version>
         <sparrow_cms_version>1.0.0-SNAPSHOT</sparrow_cms_version>
         <sparrow_file_version>1.0.0-SNAPSHOT</sparrow_file_version>
@@ -28,15 +28,15 @@
             <url>https://repo1.maven.org/maven2</url>
         </repository>
         <repository>
-            <id>sparrowzoo</id>
-            <url>https://maven.pkg.github.com/sparrowzoo/sparrow-shell</url>
+            <id>github</id>
+            <url>https://maven.pkg.github.com/sparrow-os/repositories</url>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
         </repository>
         <repository>
-            <id>github</id>
-            <url>https://github.com/orgs/sparrow-os/repositories</url>
+            <id>sparrowzoo</id>
+            <url>https://maven.pkg.github.com/sparrowzoo/sparrow-shell</url>
             <snapshots>
                 <enabled>true</enabled>
             </snapshots>
