@@ -23,24 +23,24 @@
         <sparrow_activity_version>1.0.0-SNAPSHOT</sparrow_activity_version>
     </properties>
     <repositories>
-                <repository>
-                    <id>central</id>
-                    <url>https://repo1.maven.org/maven2</url>
-                </repository>
-            <repository>
-                <id>sparrowzoo</id>
-                <url>https://maven.pkg.github.com/sparrowzoo/sparrow-shell</url>
-                <snapshots>
-                    <enabled>true</enabled>
-                </snapshots>
-            </repository>
-            <repository>
-                <id>github</id>
-                <url>https://maven.pkg.github.com/sparrowzoo/sparrow-shell</url>
-                <snapshots>
-                    <enabled>true</enabled>
-                </snapshots>
-            </repository>
+        <repository>
+            <id>central</id>
+            <url>https://repo1.maven.org/maven2</url>
+        </repository>
+        <repository>
+            <id>sparrowzoo</id>
+            <url>https://maven.pkg.github.com/sparrowzoo/sparrow-shell</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>github</id>
+            <url>https://github.com/orgs/sparrow-os/repositories</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
     </repositories>
     <distributionManagement>
         <repository>
