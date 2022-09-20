@@ -63,6 +63,11 @@
             </dependency>
             <dependency>
                 <groupId>com.sparrow.passport</groupId>
+                <artifactId>passport-sparrow-dao</artifactId>
+                <version>${sparrow_passport_version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.sparrow.passport</groupId>
                 <artifactId>passport-api</artifactId>
                 <version>${sparrow_passport_version}</version>
             </dependency>
