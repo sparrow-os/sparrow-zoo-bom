@@ -92,13 +92,6 @@
                 <artifactId>passport-adapter</artifactId>
                 <version>${sparrow_passport_version}</version>
             </dependency>
-
-            <dependency>
-                <groupId>com.sparrow.passport</groupId>
-                <artifactId>passport-sparrow-dao</artifactId>
-                <version>${sparrow_passport_version}</version>
-            </dependency>
-
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
