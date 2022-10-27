@@ -12,6 +12,9 @@
     <artifactId>sparrow-zoo-bom</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0-SNAPSHOT</version>
+    <modules>
+        <module>../sparrow-starter</module>
+    </modules>
     <properties>
         <repository>sparrow-os/sparrow-zoo-bom</repository>
         <sparrow_pay_version>1.0.0-SNAPSHOT</sparrow_pay_version>
@@ -21,6 +24,7 @@
         <sparrow_passport_version>1.0.0-SNAPSHOT</sparrow_passport_version>
         <sparrow_blog_version>1.0.0-SNAPSHOT</sparrow_blog_version>
         <sparrow_activity_version>1.0.0-SNAPSHOT</sparrow_activity_version>
+        <sparrow_starer_verion>1.0.0-SNAPSHOT</sparrow_starer_verion>
     </properties>
     <repositories>
         <repository>
@@ -120,6 +124,18 @@
                 <groupId>com.sparrow.file</groupId>
                 <artifactId>file-sparrow-dao</artifactId>
                 <version>${sparrow_file_version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.sparrow.file</groupId>
+                <artifactId>file-sparrow-dao</artifactId>
+                <version>${sparrow_file_version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.sparrow</groupId>
+                <artifactId>sparrow-starter</artifactId>
+                <version>${sparrow_starer_verion}</version>
+
             </dependency>
 
             <dependency>
