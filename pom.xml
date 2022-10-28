@@ -21,7 +21,6 @@
         <sparrow_passport_version>1.0.0-SNAPSHOT</sparrow_passport_version>
         <sparrow_blog_version>1.0.0-SNAPSHOT</sparrow_blog_version>
         <sparrow_activity_version>1.0.0-SNAPSHOT</sparrow_activity_version>
-        <sparrow_security_version>1.0.0-SNAPSHOT</sparrow_security_version>
         <sparrow_starer_verion>1.0.0-SNAPSHOT</sparrow_starer_verion>
     </properties>
     <repositories>
