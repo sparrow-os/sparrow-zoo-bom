@@ -12,9 +12,6 @@
     <artifactId>sparrow-zoo-bom</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0-SNAPSHOT</version>
-    <modules>
-        <module>../sparrow-starter</module>
-    </modules>
     <properties>
         <repository>sparrow-os/sparrow-zoo-bom</repository>
         <sparrow_pay_version>1.0.0-SNAPSHOT</sparrow_pay_version>
@@ -24,6 +21,7 @@
         <sparrow_passport_version>1.0.0-SNAPSHOT</sparrow_passport_version>
         <sparrow_blog_version>1.0.0-SNAPSHOT</sparrow_blog_version>
         <sparrow_activity_version>1.0.0-SNAPSHOT</sparrow_activity_version>
+        <sparrow_security_version>1.0.0-SNAPSHOT</sparrow_security_version>
         <sparrow_starer_verion>1.0.0-SNAPSHOT</sparrow_starer_verion>
     </properties>
     <repositories>
@@ -55,6 +53,48 @@
     </distributionManagement>
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.sparrow.security</groupId>
+                <artifactId>security-protocol</artifactId>
+                <version>${sparrow_security_version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.sparrow.security</groupId>
+                <artifactId>security-dao-api</artifactId>
+                <version>${sparrow_security_version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.sparrow.security</groupId>
+                <artifactId>security-sparrow-dao</artifactId>
+                <version>${sparrow_security_version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.sparrow.security</groupId>
+                <artifactId>security-api</artifactId>
+                <version>${sparrow_security_version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.sparrow.security</groupId>
+                <artifactId>security-infrastructure</artifactId>
+                <version>${sparrow_security_version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.sparrow.security</groupId>
+                <artifactId>security-domain</artifactId>
+                <version>${sparrow_security_version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.sparrow.security</groupId>
+                <artifactId>security-adapter</artifactId>
+                <version>${sparrow_security_version}</version>
+            </dependency>
+
+
+
+
+
             <dependency>
                 <groupId>com.sparrow.passport</groupId>
                 <artifactId>passport-protocol</artifactId>
@@ -96,12 +136,13 @@
                 <artifactId>passport-adapter</artifactId>
                 <version>${sparrow_passport_version}</version>
             </dependency>
+
+
             <dependency>
                 <groupId>com.sparrow.file</groupId>
                 <artifactId>file-protocol</artifactId>
                 <version>${sparrow_file_version}</version>
             </dependency>
-
             <dependency>
                 <groupId>com.sparrow.file</groupId>
                 <artifactId>file-api</artifactId>
@@ -125,17 +166,11 @@
                 <artifactId>file-sparrow-dao</artifactId>
                 <version>${sparrow_file_version}</version>
             </dependency>
-            <dependency>
-                <groupId>com.sparrow.file</groupId>
-                <artifactId>file-sparrow-dao</artifactId>
-                <version>${sparrow_file_version}</version>
-            </dependency>
 
             <dependency>
                 <groupId>com.sparrow</groupId>
                 <artifactId>sparrow-starter</artifactId>
                 <version>${sparrow_starer_verion}</version>
-
             </dependency>
 
             <dependency>
