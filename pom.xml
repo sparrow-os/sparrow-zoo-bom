@@ -55,18 +55,29 @@
         <dependencies>
 
             <dependency>
-                <groupId>com.sparrow.security</groupId>
+                <groupId>com.sparrow.security.admin</groupId>
                 <artifactId>security-dao-api</artifactId>
                 <version>${sparrow_security_version}</version>
             </dependency>
             <dependency>
-                <groupId>com.sparrow.security</groupId>
+                <groupId>com.sparrow.security.admin</groupId>
                 <artifactId>security-sparrow-dao</artifactId>
+                <version>${sparrow_security_version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.sparrow.security.admin</groupId>
+                <artifactId>security-mybatis</artifactId>
                 <version>${sparrow_security_version}</version>
             </dependency>
             <dependency>
                 <groupId>com.sparrow.security</groupId>
                 <artifactId>security-api</artifactId>
+                <version>${sparrow_security_version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.sparrow.security</groupId>
+                <artifactId>security-po</artifactId>
                 <version>${sparrow_security_version}</version>
             </dependency>
 
