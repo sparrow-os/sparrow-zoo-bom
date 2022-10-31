@@ -53,22 +53,52 @@
     </distributionManagement>
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>com.sparrow.security</groupId>
+                <artifactId>security-po</artifactId>
+                <version>${sparrow_security_version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.sparrow.security.admin</groupId>
+                <artifactId>security-admin-protocol</artifactId>
+                <version>${sparrow_security_version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.sparrow.security.admin</groupId>
+                <artifactId>security-admin-dao-api</artifactId>
+                <version>${sparrow_security_version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.sparrow.security.admin</groupId>
+                <artifactId>security-admin-sparrow-dao</artifactId>
+                <version>${sparrow_security_version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.sparrow.security.admin</groupId>
+                <artifactId>security-admin-mybatis</artifactId>
+                <version>${sparrow_security_version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.sparrow.security.admin</groupId>
+                <artifactId>security-admin-domain</artifactId>
+                <version>${sparrow_security_version}</version>
+            </dependency>
 
             <dependency>
                 <groupId>com.sparrow.security.admin</groupId>
-                <artifactId>security-dao-api</artifactId>
+                <artifactId>security-admin-infrastructure</artifactId>
                 <version>${sparrow_security_version}</version>
             </dependency>
+
             <dependency>
                 <groupId>com.sparrow.security.admin</groupId>
-                <artifactId>security-sparrow-dao</artifactId>
+                <artifactId>security-admin-adapter</artifactId>
                 <version>${sparrow_security_version}</version>
             </dependency>
-            <dependency>
-                <groupId>com.sparrow.security.admin</groupId>
-                <artifactId>security-mybatis</artifactId>
-                <version>${sparrow_security_version}</version>
-            </dependency>
+
+
+
+
             <dependency>
                 <groupId>com.sparrow.security</groupId>
                 <artifactId>security-api</artifactId>
@@ -77,32 +107,41 @@
 
             <dependency>
                 <groupId>com.sparrow.security</groupId>
-                <artifactId>security-po</artifactId>
-                <version>${sparrow_security_version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>com.sparrow.security.admin</groupId>
-                <artifactId>security-infrastructure</artifactId>
+                <artifactId>security-protocol</artifactId>
                 <version>${sparrow_security_version}</version>
             </dependency>
             <dependency>
-                <groupId>com.sparrow.security.admin</groupId>
+                <groupId>com.sparrow.security</groupId>
+                <artifactId>security-dao-api</artifactId>
+                <version>${sparrow_security_version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.sparrow.security</groupId>
+                <artifactId>security-sparrow-dao</artifactId>
+                <version>${sparrow_security_version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.sparrow.security</groupId>
+                <artifactId>security-mybatis</artifactId>
+                <version>${sparrow_security_version}</version>
+            </dependency>
+            <dependency>
+                <groupId>com.sparrow.security</groupId>
                 <artifactId>security-domain</artifactId>
                 <version>${sparrow_security_version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.sparrow.security.admin</groupId>
-                <artifactId>security-adapter</artifactId>
-                <version>${sparrow_security_version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.sparrow.security.admin</groupId>
-                <artifactId>security-protocol</artifactId>
+                <groupId>com.sparrow.security</groupId>
+                <artifactId>security-infrastructure</artifactId>
                 <version>${sparrow_security_version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>com.sparrow.security</groupId>
+                <artifactId>security-adapter</artifactId>
+                <version>${sparrow_security_version}</version>
+            </dependency>
 
 
 
