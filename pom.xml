@@ -5,16 +5,17 @@
     <parent>
         <groupId>com.sparrowzoo</groupId>
         <artifactId>sparrow-bom</artifactId>
-        <version>1.0</version>
+        <version>0.0.2-SNAPSHOT</version>
         <relativePath/>
     </parent>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>sparrow-zoo-bom</artifactId>
-    <groupId>com.sparrow</groupId>
     <packaging>pom</packaging>
     <version>1.0.0-SNAPSHOT</version>
+    <name>sparrow-zoo-bom</name>
+    <url>https://github.com/sparrowzoo/sparrow-zoo-bom.git</url>
+    <description>sparrow-zoo-bom</description>
     <properties>
-        <repository>sparrow-os/sparrow-zoo-bom</repository>
         <sparrow_pay_version>1.0.0-SNAPSHOT</sparrow_pay_version>
         <sparrow_cms_version>1.0.0-SNAPSHOT</sparrow_cms_version>
         <sparrow_file_version>1.0.0-SNAPSHOT</sparrow_file_version>
@@ -24,75 +25,51 @@
         <sparrow_blog_version>1.0.0-SNAPSHOT</sparrow_blog_version>
         <sparrow_activity_version>1.0.0-SNAPSHOT</sparrow_activity_version>
         <sparrow_starer_verion>1.0.0-SNAPSHOT</sparrow_starer_verion>
+        <spring.boot.version>2.3.2.RELEASE</spring.boot.version>
+        <spring-cloud.version>Hoxton.SR9</spring-cloud.version>
+        <spring-cloud-alibaba.version>2.2.6.RELEASE</spring-cloud-alibaba.version>
     </properties>
-    <repositories>
-        <repository>
-            <id>central</id>
-            <url>https://repo1.maven.org/maven2</url>
-        </repository>
-        <repository>
-            <id>github</id>
-            <url>https://maven.pkg.github.com/sparrow-os/repositories</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>sparrowzoo</id>
-            <url>https://maven.pkg.github.com/sparrowzoo/sparrow-shell</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
-    <distributionManagement>
-        <repository>
-            <id>github</id>
-            <name>GitHub Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/${repository}</url>
-        </repository>
-    </distributionManagement>
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.sparrow.security</groupId>
+                <groupId>com.sparrowzoo.security</groupId>
                 <artifactId>security-po</artifactId>
                 <version>${sparrow_security_version}</version>
             </dependency>
             <dependency>
-                <groupId>com.sparrow.security.admin</groupId>
+                <groupId>com.sparrowzoo.security.admin</groupId>
                 <artifactId>security-admin-protocol</artifactId>
                 <version>${sparrow_security_version}</version>
             </dependency>
             <dependency>
-                <groupId>com.sparrow.security.admin</groupId>
+                <groupId>com.sparrowzoo.security.admin</groupId>
                 <artifactId>security-admin-dao-api</artifactId>
                 <version>${sparrow_security_version}</version>
             </dependency>
             <dependency>
-                <groupId>com.sparrow.security.admin</groupId>
+                <groupId>com.sparrowzoo.security.admin</groupId>
                 <artifactId>security-admin-sparrow-dao</artifactId>
                 <version>${sparrow_security_version}</version>
             </dependency>
             <dependency>
-                <groupId>com.sparrow.security.admin</groupId>
+                <groupId>com.sparrowzoo.security.admin</groupId>
                 <artifactId>security-admin-mybatis</artifactId>
                 <version>${sparrow_security_version}</version>
             </dependency>
             <dependency>
-                <groupId>com.sparrow.security.admin</groupId>
+                <groupId>com.sparrowzoo.security.admin</groupId>
                 <artifactId>security-admin-domain</artifactId>
                 <version>${sparrow_security_version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.sparrow.security.admin</groupId>
+                <groupId>com.sparrowzoo.security.admin</groupId>
                 <artifactId>security-admin-infrastructure</artifactId>
                 <version>${sparrow_security_version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.sparrow.security.admin</groupId>
+                <groupId>com.sparrowzoo.security.admin</groupId>
                 <artifactId>security-admin-adapter</artifactId>
                 <version>${sparrow_security_version}</version>
             </dependency>
@@ -101,45 +78,45 @@
 
 
             <dependency>
-                <groupId>com.sparrow.security</groupId>
+                <groupId>com.sparrowzoo.security</groupId>
                 <artifactId>security-api</artifactId>
                 <version>${sparrow_security_version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.sparrow.security</groupId>
+                <groupId>com.sparrowzoo.security</groupId>
                 <artifactId>security-protocol</artifactId>
                 <version>${sparrow_security_version}</version>
             </dependency>
             <dependency>
-                <groupId>com.sparrow.security</groupId>
+                <groupId>com.sparrowzoo.security</groupId>
                 <artifactId>security-dao-api</artifactId>
                 <version>${sparrow_security_version}</version>
             </dependency>
             <dependency>
-                <groupId>com.sparrow.security</groupId>
+                <groupId>com.sparrowzoo.security</groupId>
                 <artifactId>security-sparrow-dao</artifactId>
                 <version>${sparrow_security_version}</version>
             </dependency>
             <dependency>
-                <groupId>com.sparrow.security</groupId>
+                <groupId>com.sparrowzoo.security</groupId>
                 <artifactId>security-mybatis</artifactId>
                 <version>${sparrow_security_version}</version>
             </dependency>
             <dependency>
-                <groupId>com.sparrow.security</groupId>
+                <groupId>com.sparrowzoo.security</groupId>
                 <artifactId>security-domain</artifactId>
                 <version>${sparrow_security_version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.sparrow.security</groupId>
+                <groupId>com.sparrowzoo.security</groupId>
                 <artifactId>security-infrastructure</artifactId>
                 <version>${sparrow_security_version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.sparrow.security</groupId>
+                <groupId>com.sparrowzoo.security</groupId>
                 <artifactId>security-adapter</artifactId>
                 <version>${sparrow_security_version}</version>
             </dependency>
@@ -147,79 +124,79 @@
 
 
             <dependency>
-                <groupId>com.sparrow.passport</groupId>
+                <groupId>com.sparrowzoo.passport</groupId>
                 <artifactId>passport-protocol</artifactId>
                 <version>${sparrow_passport_version}</version>
             </dependency>
             <dependency>
-                <groupId>com.sparrow.passport</groupId>
+                <groupId>com.sparrowzoo.passport</groupId>
                 <artifactId>passport-dao-api</artifactId>
                 <version>${sparrow_passport_version}</version>
             </dependency>
             <dependency>
-                <groupId>com.sparrow.passport</groupId>
+                <groupId>com.sparrowzoo.passport</groupId>
                 <artifactId>passport-sparrow-dao</artifactId>
                 <version>${sparrow_passport_version}</version>
             </dependency>
             <dependency>
-                <groupId>com.sparrow.passport</groupId>
+                <groupId>com.sparrowzoo.passport</groupId>
                 <artifactId>passport-api</artifactId>
                 <version>${sparrow_passport_version}</version>
             </dependency>
             <dependency>
-                <groupId>com.sparrow.passport</groupId>
+                <groupId>com.sparrowzoo.passport</groupId>
                 <artifactId>passport-application</artifactId>
                 <version>${sparrow_passport_version}</version>
             </dependency>
             <dependency>
-                <groupId>com.sparrow.passport</groupId>
+                <groupId>com.sparrowzoo.passport</groupId>
                 <artifactId>passport-infrastructure</artifactId>
                 <version>${sparrow_passport_version}</version>
             </dependency>
             <dependency>
-                <groupId>com.sparrow.passport</groupId>
+                <groupId>com.sparrowzoo.passport</groupId>
                 <artifactId>passport-domain</artifactId>
                 <version>${sparrow_passport_version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.sparrow.passport</groupId>
+                <groupId>com.sparrowzoo.passport</groupId>
                 <artifactId>passport-adapter</artifactId>
                 <version>${sparrow_passport_version}</version>
             </dependency>
 
 
             <dependency>
-                <groupId>com.sparrow.file</groupId>
+                <groupId>com.sparrowzoo.file</groupId>
                 <artifactId>file-protocol</artifactId>
                 <version>${sparrow_file_version}</version>
             </dependency>
             <dependency>
-                <groupId>com.sparrow.file</groupId>
+                <groupId>com.sparrowzoo.file</groupId>
                 <artifactId>file-api</artifactId>
                 <version>${sparrow_file_version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.sparrow.file</groupId>
+                <groupId>com.sparrowzoo.file</groupId>
                 <artifactId>file-dao-api</artifactId>
                 <version>${sparrow_file_version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.sparrow.file</groupId>
+                <groupId>com.sparrowzoo.file</groupId>
                 <artifactId>file-service</artifactId>
                 <version>${sparrow_file_version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.sparrow.file</groupId>
+                <groupId>com.sparrowzoo.file</groupId>
                 <artifactId>file-sparrow-dao</artifactId>
                 <version>${sparrow_file_version}</version>
             </dependency>
 
             <dependency>
-                <groupId>com.sparrow</groupId>
+                <groupId>com.sparrowzoo</groupId>
                 <artifactId>sparrow-starter</artifactId>
                 <version>${sparrow_starer_verion}</version>
             </dependency>
@@ -227,7 +204,22 @@
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <version>2.3.2.RELEASE</version>
+                <version>${spring.boot.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <!-- 声明 springCloud Alibaba 版本 -->
+            <dependency>
+                <groupId>com.alibaba.cloud</groupId>
+                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
+                <version>${spring-cloud-alibaba.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
