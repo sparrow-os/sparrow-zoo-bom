@@ -75,8 +75,6 @@
             </dependency>
 
 
-
-
             <dependency>
                 <groupId>com.sparrowzoo.security</groupId>
                 <artifactId>security-api</artifactId>
@@ -120,7 +118,6 @@
                 <artifactId>security-adapter</artifactId>
                 <version>${sparrow_security_version}</version>
             </dependency>
-
 
 
             <dependency>
@@ -225,4 +222,22 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                    <version>${spring.boot.version}</version>
+                    <executions>
+                        <execution>
+                            <goals>
+                                <goal>repackage</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>
